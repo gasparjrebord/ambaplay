@@ -411,14 +411,30 @@ header {
       margin-left: 5%;
       height: 30%;
       width: 40%; }
+      @media screen and (max-width: 425px) {
+        .section-ambabussiness__card--img-right {
+          margin-left: 0;
+          width: 50%;
+          height: 40%; } }
     .section-ambabussiness__card--img-left {
       margin-right: 5%;
       height: 30%;
       width: 40%; }
+      @media screen and (max-width: 425px) {
+        .section-ambabussiness__card--img-left {
+          margin-left: 0;
+          width: 50%;
+          height: 40%; } }
     .section-ambabussiness__card--text-left {
       margin-left: 5%; }
+      @media screen and (max-width: 425px) {
+        .section-ambabussiness__card--text-left {
+          font-size: 10px; } }
     .section-ambabussiness__card--text-right {
       margin-right: 5%; }
+      @media screen and (max-width: 425px) {
+        .section-ambabussiness__card--text-right {
+          font-size: 10px; } }
 
 footer {
   grid-area: footer;
