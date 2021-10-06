@@ -1,0 +1,30 @@
+.main-sing-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: main;
+  background-image: url(/assets/images/cassette.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  &__form {
+    background-color: $orange__light;
+    background-image: linear-gradient(to bottom, $orange__light, $orange__dark);
+    background-position: center;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    &--p {
+      color: white;
+      font-size: 30px;
+      @include tablet {
+        font-size: 25px;
+      }
+    }
+    @include tablet {
+      width: 70%;
+    }
+  }
+}

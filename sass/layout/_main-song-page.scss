@@ -1,0 +1,48 @@
+.main-song-page {
+  grid-area: main;
+  height: 100%;
+  &__artist-info {
+    display: flex;
+    flex-direction: row;
+    &--profile {
+      width: 75px;
+      height: 75px;
+    }
+    &--text {
+      position: relative;
+      left: 2%;
+      color: black;
+    }
+  }
+  &__song {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(/assets/images/party-desk.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vw;
+    width: 100%;
+    div {
+      width: 100%;
+      h2 {
+        font-size: 30px;
+        color: white;
+      }
+    }
+    &--audio {
+      background-color: transparent;
+      width: 90%;
+    }
+  }
+  &__h3 {
+    text-align: center;
+  }
+}
+.section-song-page {
+  grid-area: section;
+  &__paypal-logo {
+    width: 50%;
+  }
+}

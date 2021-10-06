@@ -1,0 +1,26 @@
+footer {
+  grid-area: footer;
+  height: 10vw;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  &__mark {
+    width: auto;
+    color: gray;
+  }
+  &__redes {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    &--logo {
+      fill: gray;
+    }
+    &--img {
+      width: 100px;
+    }
+  }
+}

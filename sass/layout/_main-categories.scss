@@ -1,0 +1,29 @@
+.main-categories {
+  grid-area: main;
+  display: block;
+  &__div {
+    height: 40vh;
+    background-image: url(/assets/images/microphone.jpg);
+    background-position: center;
+    background-size: cover;
+    @include mobile {
+      height: 25vh;
+    }
+    &--h2 {
+      color: white;
+      position: relative;
+      width: 60%;
+      top: 50%;
+      left: 10%;
+    }
+  }
+}
+.section-categories {
+  grid-area: section;
+  .page-link {
+    color: rgb(255, 193, 7);
+  }
+  @include mobile {
+    text-align: center;
+  }
+}

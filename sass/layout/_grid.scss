@@ -1,0 +1,95 @@
+#grid-inicio {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    ". section ."
+    ". footer .";
+  grid-template-rows: auto auto auto 200px;
+  grid-template-columns: 10% auto 10%;
+  grid-gap: 25px;
+}
+#grid-sing-in {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    ". footer .";
+  grid-template-rows: auto auto auto 200px;
+  grid-template-columns: 10% auto 10%;
+  grid-gap: 25px;
+}
+#grid-register {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    ". footer .";
+  grid-template-rows: auto auto auto 200px;
+  grid-template-columns: 10% auto 10%;
+  grid-gap: 25px;
+}
+#grid-categories {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    ". section ."
+    ". footer .";
+  grid-template-rows: auto auto auto 200px;
+  grid-template-columns: 10% auto 10%;
+  grid-gap: 25px;
+}
+#grid-song-page {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    ". main section ."
+    ". main section ."
+    ". footer footer .";
+  grid-template-rows: 7% auto auto 200px;
+  grid-template-columns: 10% 55% 25% 10%;
+  grid-gap: 25px;
+  @include mobile {
+    grid-template-areas:
+      "header header header"
+      ". main ."
+      ". section ."
+      ". footer .";
+    grid-template-columns: 10% auto 10%;
+  }
+}
+#grid-artist {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    ". main section ."
+    ". main section ."
+    ". footer footer .";
+  grid-template-rows: 7% auto auto 200px;
+  grid-template-columns: 10% 20% 60% 10%;
+  grid-gap: 25px;
+  @include tablet {
+    grid-template-columns: 5% 25% 65% 5%;
+  }
+  @include mobile {
+    grid-template-areas:
+      "header header header"
+      ". main ."
+      ". section ."
+      ". footer .";
+    grid-template-rows: 50px auto auto 200px;
+    grid-template-columns: 5% auto 5%;
+  }
+}
+#grid-ambabussiness {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    ". section ."
+    ". footer .";
+  grid-template-rows: auto auto auto 200px;
+  grid-template-columns: 10% auto 10%;
+  grid-gap: 25px;
+}
