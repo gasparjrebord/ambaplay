@@ -1,6 +1,11 @@
 .main-inicio {
   display: block;
   grid-area: main;
+  .btn-light {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
 
   &__div {
     display: flex;

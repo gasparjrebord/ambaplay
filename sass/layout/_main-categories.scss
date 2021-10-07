@@ -21,7 +21,7 @@
 .section-categories {
   grid-area: section;
   .page-link {
-    color: rgb(255, 193, 7);
+    color: $orange__light;
   }
   @include mobile {
     text-align: center;

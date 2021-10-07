@@ -3,4 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  .btn-light {
+    color: white;
+    background-color: #ff641a;
+    border-color: #e54916;
+  }
+  .btn-outline-light {
+    color: #ff641a;
+    border-color: #ff641a;
+  }
 }
