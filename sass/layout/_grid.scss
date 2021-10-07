@@ -4,8 +4,8 @@
     "header header header"
     "main main main"
     ". section ."
-    ". footer .";
-  grid-template-rows: auto auto auto 200px;
+    "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px;
 }
@@ -14,8 +14,8 @@
   grid-template-areas:
     "header header header"
     "main main main"
-    ". footer .";
-  grid-template-rows: auto auto auto 200px;
+    "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px;
 }
@@ -24,8 +24,8 @@
   grid-template-areas:
     "header header header"
     "main main main"
-    ". footer .";
-  grid-template-rows: auto auto auto 200px;
+    "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px;
 }
@@ -35,8 +35,8 @@
     "header header header"
     "main main main"
     ". section ."
-    ". footer .";
-  grid-template-rows: auto auto auto 200px;
+    "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px;
 }
@@ -46,8 +46,8 @@
     "header header header header"
     ". main section ."
     ". main section ."
-    ". footer footer .";
-  grid-template-rows: 7% auto auto 200px;
+    "footer footer footer footer";
+  grid-template-rows: 7% auto auto auto;
   grid-template-columns: 10% 55% 25% 10%;
   grid-gap: 25px;
   @include mobile {
@@ -55,7 +55,7 @@
       "header header header"
       ". main ."
       ". section ."
-      ". footer .";
+      "footer footer footer";
     grid-template-columns: 10% 80% 10%;
   }
 }
@@ -65,8 +65,8 @@
     "header header header header"
     ". main section ."
     ". main section ."
-    ". footer footer .";
-  grid-template-rows: 7% auto auto 200px;
+    "footer footer footer footer";
+  grid-template-rows: 7% auto auto auto;
   grid-template-columns: 10% 20% 60% 10%;
   grid-gap: 25px;
   @include tablet {
@@ -77,8 +77,8 @@
       "header header header"
       ". main ."
       ". section ."
-      ". footer .";
-    grid-template-rows: 50px auto auto 200px;
+      "footer footer footer";
+    grid-template-rows: 50px auto auto auto;
     grid-template-columns: 5% 90% 5%;
   }
 }
@@ -88,8 +88,8 @@
     "header header header"
     "main main main"
     ". section ."
-    ". footer .";
-  grid-template-rows: auto auto auto 200px;
+    "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px;
   @include tablet {

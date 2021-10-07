@@ -6,47 +6,47 @@
 
 #grid-inicio {
   display: grid;
-  grid-template-areas: "header header header" "main main main" ". section ." ". footer .";
-  grid-template-rows: auto auto auto 200px;
+  grid-template-areas: "header header header" "main main main" ". section ." "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-sing-in {
   display: grid;
-  grid-template-areas: "header header header" "main main main" ". footer .";
-  grid-template-rows: auto auto auto 200px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-register {
   display: grid;
-  grid-template-areas: "header header header" "main main main" ". footer .";
-  grid-template-rows: auto auto auto 200px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-categories {
   display: grid;
-  grid-template-areas: "header header header" "main main main" ". section ." ". footer .";
-  grid-template-rows: auto auto auto 200px;
+  grid-template-areas: "header header header" "main main main" ". section ." "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-song-page {
   display: grid;
-  grid-template-areas: "header header header header" ". main section ." ". main section ." ". footer footer .";
-  grid-template-rows: 7% auto auto 200px;
+  grid-template-areas: "header header header header" ". main section ." ". main section ." "footer footer footer footer";
+  grid-template-rows: 7% auto auto auto;
   grid-template-columns: 10% 55% 25% 10%;
   grid-gap: 25px; }
   @media screen and (max-width: 425px) {
     #grid-song-page {
-      grid-template-areas: "header header header" ". main ." ". section ." ". footer .";
+      grid-template-areas: "header header header" ". main ." ". section ." "footer footer footer";
       grid-template-columns: 10% 80% 10%; } }
 
 #grid-artist {
   display: grid;
-  grid-template-areas: "header header header header" ". main section ." ". main section ." ". footer footer .";
-  grid-template-rows: 7% auto auto 200px;
+  grid-template-areas: "header header header header" ". main section ." ". main section ." "footer footer footer footer";
+  grid-template-rows: 7% auto auto auto;
   grid-template-columns: 10% 20% 60% 10%;
   grid-gap: 25px; }
   @media screen and (max-width: 768px) {
@@ -54,14 +54,14 @@
       grid-template-columns: 5% 25% 65% 5%; } }
   @media screen and (max-width: 425px) {
     #grid-artist {
-      grid-template-areas: "header header header" ". main ." ". section ." ". footer .";
-      grid-template-rows: 50px auto auto 200px;
+      grid-template-areas: "header header header" ". main ." ". section ." "footer footer footer";
+      grid-template-rows: 50px auto auto auto;
       grid-template-columns: 5% 90% 5%; } }
 
 #grid-ambabussiness {
   display: grid;
-  grid-template-areas: "header header header" "main main main" ". section ." ". footer .";
-  grid-template-rows: auto auto auto 200px;
+  grid-template-areas: "header header header" "main main main" ". section ." "footer footer footer";
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
   @media screen and (max-width: 768px) {
@@ -441,22 +441,74 @@ header {
 
 footer {
   grid-area: footer;
-  height: 10vw;
-  width: 100%; }
-
-.footer {
-  display: flex;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e54916;
+  height: auto;
   width: 100%;
-  height: 100%;
-  flex-direction: row; }
-  .footer__mark {
-    width: auto;
-    color: gray; }
-  .footer__redes {
+  padding-top: 40px;
+  color: #fff; }
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .footer-content__title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem; }
+  .footer-content__text {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2; }
+  .footer-content__socials {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    width: 100%; }
-    .footer__redes--logo {
-      fill: gray; }
-    .footer__redes--img {
-      width: 100px; }
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0; }
+    .footer-content__socials--li {
+      margin: 0 10px; }
+      .footer-content__socials--li a {
+        text-decoration: none;
+        color: #fff;
+        border: 1.1px solid white;
+        padding: 5px;
+        border-radius: 50%; }
+        .footer-content__socials--li a i {
+          font-size: 1.1rem;
+          width: 20px;
+          transition: color 0.4s ease; }
+        .footer-content__socials--li a:hover i {
+          color: aqua; }
+  .footer-content__menu {
+    display: flex; }
+    .footer-content__menu li {
+      padding-right: 10px;
+      display: block; }
+      .footer-content__menu li a {
+        color: #cfd2d6;
+        text-decoration: none; }
+        .footer-content__menu li a:hover {
+          color: #27bcda; }
+  .footer-content__bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center; }
+    .footer-content__bottom p {
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize; }
+      .footer-content__bottom p a {
+        color: #44bae8;
+        font-size: 16px;
+        text-decoration: none; }
