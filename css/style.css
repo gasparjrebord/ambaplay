@@ -8,28 +8,28 @@
   display: grid;
   grid-template-areas: "header header header" "main main main" ". section ." ". footer .";
   grid-template-rows: auto auto auto 200px;
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-sing-in {
   display: grid;
   grid-template-areas: "header header header" "main main main" ". footer .";
   grid-template-rows: auto auto auto 200px;
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-register {
   display: grid;
   grid-template-areas: "header header header" "main main main" ". footer .";
   grid-template-rows: auto auto auto 200px;
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-categories {
   display: grid;
   grid-template-areas: "header header header" "main main main" ". section ." ". footer .";
   grid-template-rows: auto auto auto 200px;
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
 
 #grid-song-page {
@@ -41,7 +41,7 @@
   @media screen and (max-width: 425px) {
     #grid-song-page {
       grid-template-areas: "header header header" ". main ." ". section ." ". footer .";
-      grid-template-columns: 10% auto 10%; } }
+      grid-template-columns: 10% 80% 10%; } }
 
 #grid-artist {
   display: grid;
@@ -56,14 +56,17 @@
     #grid-artist {
       grid-template-areas: "header header header" ". main ." ". section ." ". footer .";
       grid-template-rows: 50px auto auto 200px;
-      grid-template-columns: 5% auto 5%; } }
+      grid-template-columns: 5% 90% 5%; } }
 
 #grid-ambabussiness {
   display: grid;
   grid-template-areas: "header header header" "main main main" ". section ." ". footer .";
   grid-template-rows: auto auto auto 200px;
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 10% 80% 10%;
   grid-gap: 25px; }
+  @media screen and (max-width: 768px) {
+    #grid-ambabussiness {
+      grid-template-columns: 5% 90% 5%; } }
 
 header {
   grid-area: header; }
