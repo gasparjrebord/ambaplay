@@ -41,10 +41,13 @@
                            <a class="nav-link" href="./pages/category-page.html">Explore</a>
                         </li>
                         <li class="nav-item menu__ul--li">
-                           <a class="nav-link" href="./pages/sing-in.html">Sing In</a>
+                           <a class="nav-link" href="./pages/category-page.html">Library</a>
                         </li>
                         <li class="nav-item menu__ul--li">
                            <a class="nav-link" href="./pages/register.html">Join</a>
+                        </li>
+                        <li class="nav-item menu__ul--li">
+                           <button onclick="togglePopup()" class="btn btn-light sign-in-button">Sign In</button>
                         </li>
                      </ul>
                   </div>
@@ -52,6 +55,35 @@
             </div>
          </nav>
       </header>
+      <div class="sign-in" id="popup-1">
+         <div class="sign-in__content">
+            <button type="button" class="btn-close sign-in__content--close-btn" onclick="togglePopup()" aria-label="Close"></button>
+            <h2 class="sign-in__content--title">Sign In to AmbaPlay</h2>
+            <form>
+               <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control sign-in__content--input-field" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+               </div>
+               <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+               </div>
+               <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input sign-in__content--input-field" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+               </div>
+               <button type="submit" class="btn btn-light">Submit</button>
+               <p>Don't have an account? <a href="./register.html">Sign Up</a></p>
+            </form>
+         </div>
+         <script>
+            function togglePopup() {
+            document.getElementById("popup-1")
+             .classList.toggle("active");
+            }
+         </script>
+      </div>
       <main class="main-inicio">
          <div class="main-inicio__div">
             <div class="main-inicio__div--search-bar">
