@@ -5,8 +5,8 @@
     "main main main"
     ". section ."
     "footer footer footer";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto;
+  grid-template-columns: 10% auto 10%;
   grid-gap: 25px;
 }
 #grid-sing-in {
@@ -15,8 +15,8 @@
     "header header header"
     "main main main"
     "footer footer footer";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto;
+  grid-template-columns: 10% auto 10%;
   grid-gap: 25px;
 }
 #grid-register {
@@ -25,8 +25,8 @@
     "header header header"
     "main main main"
     "footer footer footer";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto;
+  grid-template-columns: 10% auto 10%;
   grid-gap: 25px;
 }
 #grid-categories {
@@ -36,8 +36,8 @@
     "main main main"
     ". section ."
     "footer footer footer";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto;
+  grid-template-columns: 10% auto 10%;
   grid-gap: 25px;
 }
 #grid-song-page {
@@ -48,7 +48,7 @@
     ". main section ."
     "footer footer footer footer";
   grid-template-rows: 7% auto auto auto;
-  grid-template-columns: 10% 55% 25% 10%;
+  grid-template-columns: 10% auto 25% 10%;
   grid-gap: 25px;
   @include mobile {
     grid-template-areas:
@@ -56,7 +56,7 @@
       ". main ."
       ". section ."
       "footer footer footer";
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 10% auto 10%;
   }
 }
 #grid-artist {
@@ -67,10 +67,10 @@
     ". main section ."
     "footer footer footer footer";
   grid-template-rows: 7% auto auto auto;
-  grid-template-columns: 10% 20% 60% 10%;
+  grid-template-columns: 10% 20% auto 10%;
   grid-gap: 25px;
   @include tablet {
-    grid-template-columns: 5% 25% 65% 5%;
+    grid-template-columns: 5% 25% auto 5%;
   }
   @include mobile {
     grid-template-areas:
@@ -79,7 +79,7 @@
       ". section ."
       "footer footer footer";
     grid-template-rows: 50px auto auto auto;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 5% auto 5%;
   }
 }
 #grid-ambabussiness {
@@ -89,10 +89,10 @@
     "main main main"
     ". section ."
     "footer footer footer";
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto;
+  grid-template-columns: 10% auto 10%;
   grid-gap: 25px;
   @include tablet {
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 5% auto 5%;
   }
 }

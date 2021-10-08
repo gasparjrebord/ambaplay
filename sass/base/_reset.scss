@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  font-size: 1rem;
   .btn-light {
     color: white;
     background-color: #ff641a;
@@ -11,5 +12,11 @@
   .btn-outline-light {
     color: #ff641a;
     border-color: #ff641a;
+  }
+  @include tablet {
+    font-size: 0.8rem;
+  }
+  @include mobile {
+    font-size: 0.6rem;
   }
 }
