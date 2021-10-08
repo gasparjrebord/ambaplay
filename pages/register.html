@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="AmbaPlay is a site to buy and download the best songs of the moment">
-      <meta name="keywords" content="MUSIC, SONG, ARTISTS, REGISTER, CREATE ACCOUNT">
+      <meta name="keywords" content="MUSIC, SONG, ARTISTS, SING IN">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
       <link rel="stylesheet" href="/css/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
-      <title>AmbaPlay | Register</title>
+      <title>AmbaPlay | Sing In</title>
    </head>
    <body id="grid-register">
       <header class="header">
@@ -41,10 +41,13 @@
                            <a class="nav-link" href="./category-page.html">Explore</a>
                         </li>
                         <li class="nav-item menu__ul--li">
-                           <a class="nav-link" href="./sing-in.html">Sing In</a>
+                           <a class="nav-link" href="./category-page.html">Library</a>
                         </li>
                         <li class="nav-item menu__ul--li">
                            <a class="nav-link" href="./register.html">Join</a>
+                        </li>
+                        <li class="nav-item menu__ul--li">
+                           <button onclick="togglePopup()" class="btn btn-light sing-in-button">Sign In</button>
                         </li>
                      </ul>
                      <form class="d-flex">
@@ -56,6 +59,35 @@
             </div>
          </nav>
       </header>
+      <div class="sign-in" id="popup-1">
+         <div class="sign-in__content">
+            <button type="button" class="btn-close sign-in__content--close-btn" onclick="togglePopup()" aria-label="Close"></button>
+            <h2 class="sign-in__content--title">Sign In to AmbaPlay</h2>
+            <form>
+               <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control sign-in__content--input-field" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+               </div>
+               <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+               </div>
+               <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input sign-in__content--input-field" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+               </div>
+               <button type="submit" class="btn btn-light">Submit</button>
+               <p>Don't have an account? <a href="./register.html">Sign Up</a></p>
+            </form>
+         </div>
+         <script>
+            function togglePopup() {
+            document.getElementById("popup-1")
+             .classList.toggle("active");
+            }
+         </script>
+      </div>
       <main class="main-register">
          <div class="main-register__form">
             <form class="row g-3 needs-validation" novalidate>
